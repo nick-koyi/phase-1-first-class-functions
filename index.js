@@ -1,11 +1,11 @@
 function receivesAFunction(callback) {
-  return callback()
-};
+  return callback();
+}
 
-function returnsANamedFunction(name) {
-  return name || function unnamedFn() {};
+function returnsANamedFunction() {
+  return function unnamedFn() {};
 }
 
 function returnsAnAnonymousFunction() {
-  return () => {}
+  return () => {};
 }
